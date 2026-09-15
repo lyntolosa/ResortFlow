@@ -1,0 +1,12 @@
+/* Project styles can be added here. Tailwind utilities are loaded via CDN. */
+
+/* Stable fallbacks for the demo page's external imagery. */
+.home-hero-image {
+    background-color: #0b3425;
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2400&q=85') !important;
+}
+
+.home-map-image {
+    background-color: #dfe4df;
+    background-image: url('https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1200&q=85') !important;
+}
