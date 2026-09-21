@@ -9,6 +9,7 @@
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900">
     @include('partials.demo-banner')
+    @include('partials.booking-brand-bar')
     <main class="mx-auto max-w-2xl px-6 py-12">
         <div class="rounded-2xl border border-emerald-200 bg-white p-8 text-center shadow-sm sm:p-12">
             <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 text-3xl text-emerald-800">✓</div>

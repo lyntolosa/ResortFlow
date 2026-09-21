@@ -419,7 +419,7 @@
 </div>
 </div>
 <!-- Similar Recommended Rooms Section -->
-<section class="mt-space-4xl pt-space-2xl">
+<section id="recommended-accommodations" class="mt-space-4xl pt-space-2xl w-full">
 <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-space-xl">
 <div>
 <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Alternative Sanctuaries</span>
@@ -430,9 +430,9 @@
 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl">
+<div class="recommended-accommodations-grid">
 <!-- Recommended Room 1 -->
-<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+<div class="recommended-accommodation-card bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
 <div class="relative h-64 overflow-hidden">
 <img alt="Poolside Garden Suite" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Modern luxury poolside garden suite bathed in morning mist with private plunge hot tub framed by mature Japanese maples, wild jasmine, and slate stepping stones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo8wQoEwOgbrVNbmMFp6m-QCzZKeZE-PnbQSLdutlkcGJKhSfFmHppOZcI3oQLS8TOBd3uwX68FtKm_142qzKzBjPvsy2D25X3TUZSibg9LF1979hx8zJhNTaKWtf8H8gvbDljrvoeD0s5RgHSwlQ5QdMX_hs2Gdq0yiO94j8VZHfDrGQ267JB3W9JfvRhw0xN_NMHuB8ccRTNlzOJPmqtQB3NCrjr5VXrtgi-eBFoWByto6G_wwhEfQ">
 <div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full font-label-sm text-label-sm text-primary font-semibold">
@@ -463,7 +463,7 @@
 </div>
 </div>
 <!-- Recommended Room 2 -->
-<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+<div class="recommended-accommodation-card bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group flex flex-col">
 <div class="relative h-64 overflow-hidden">
 <img alt="Private Cliffside Pool Villa" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="Spectacular ultra exclusive luxury private cliffside villa with cantilevered glass infinity pool jutting out over dramatic ocean breakers and coastal cliffs with outdoor fireplace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAXGnKqDfL5ihzZlONq1jj9yWbcLRmPSoLqv5DxbH0I6C7CNgEheNuUDE5N3SQkdf6ZjuYoJBy8yBy1kIZ-HiPV-BVF2pZCa1P4VyTTj4wIG8sQgVipvAQvIUSsXkyE_VYR8QFjoh0Ee3bcGQ7MEu7rorCjoiFXxNXB_Wbh74b8P-6H0GuYIrcwwYiN9MgmqLeNaAEHgu7AMXdqk-GVYkRWbpFaH_yC4wChvgwcSCQIcnJ9iE2JgahYg">
 <div class="absolute top-3 right-3 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm font-semibold">
@@ -495,6 +495,24 @@
 </div>
 </div>
 </section>
+<style>
+  #recommended-accommodations .recommended-accommodations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    width: 100%;
+  }
+
+  #recommended-accommodations .recommended-accommodation-card {
+    min-width: 0;
+  }
+
+  @media (max-width: 767px) {
+    #recommended-accommodations .recommended-accommodations-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>
 </div>
 </div>
 <!-- Interactive Client-side Scripting -->

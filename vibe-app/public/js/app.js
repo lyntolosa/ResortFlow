@@ -30,8 +30,9 @@ function initBookingTimeline() {
     if (existingTimeline && !timeline.closest('main') && document.querySelector('header')) timeline.style.marginTop = '120px';
     if (!document.querySelector('header')) {
         const demoBanner = document.querySelector('.demo-environment-banner');
+        const brandBar = document.querySelector('.booking-brand-bar');
         timeline.style.position = 'fixed';
-        timeline.style.top = demoBanner ? `${demoBanner.offsetHeight}px` : '0';
+        timeline.style.top = `${(demoBanner?.offsetHeight || 0) + (brandBar?.offsetHeight || 0)}px`;
         timeline.style.left = '0';
         timeline.style.width = '100%';
         timeline.style.zIndex = '50';

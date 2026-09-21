@@ -9,6 +9,7 @@
 </head>
 <body class="min-h-screen bg-slate-50 text-slate-900">
     @include('partials.demo-banner')
+    @include('partials.booking-brand-bar')
     <main class="mx-auto max-w-2xl px-6 py-12">
         <div class="flex flex-wrap items-center gap-4 text-sm font-semibold">
             <a href="{{ route('stay') }}" class="text-emerald-700 transition hover:text-emerald-900">← Back to rooms</a>

@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # The Git deployment places the Laravel project in the vibe-app folder.
+    # Serve its public directory from the subdomain root without exposing
+    # the rest of the application files.
+    RewriteRule ^vibe-app/public/ - [L]
+    RewriteRule ^(.*)$ vibe-app/public/$1 [L]
+</IfModule>
